@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Calculator — Support</title>
+    <meta name="description" content="Glass Calculator support — A powerful scientific calculator, unit converter with live currency rates, and more in a stunning glass-effect interface." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #f6f7fb;
+        color: #0f172a;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+      .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+      header { text-align: center; margin-bottom: 56px; }
+      .logo {
+        width: 80px; height: 80px; margin-bottom: 16px;
+        background: rgba(255,255,255,0.55);
+        border: 1px solid rgba(255,255,255,0.7);
+        border-radius: 20px;
+        display: inline-flex; align-items: center; justify-content: center;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        font-size: 36px;
+      }
+      header h1 { font-size: 32px; font-weight: 700; color: #0f172a; }
+      header p { font-size: 16px; color: #64748b; margin-top: 8px; }
+      .card {
+        background: rgba(255,255,255,0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 16px;
+        padding: 32px;
+        margin-bottom: 24px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+        border: 1px solid rgba(255,255,255,0.7);
+      }
+      .card h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #0f172a;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .card h2 .icon { font-size: 22px; }
+      .card p, .card li { font-size: 15px; color: #334155; }
+      .card ul { padding-left: 20px; }
+      .card ul li { margin-bottom: 8px; }
+      .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 12px;
+      }
+      .feature-tag {
+        background: rgba(255,255,255,0.55);
+        border: 1px solid rgba(255,255,255,0.7);
+        border-radius: 10px;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #0f172a;
+      }
+      .faq-item {
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        padding: 16px 0;
+      }
+      .faq-item:last-child { border-bottom: none; }
+      .faq-question {
+        font-weight: 600;
+        font-size: 15px;
+        color: #0f172a;
+        margin-bottom: 6px;
+      }
+      .faq-answer { font-size: 14px; color: #475569; }
+      .faq-answer a { color: #0ea5e9; text-decoration: underline; }
+      .contact-box {
+        background: rgba(255,255,255,0.55);
+        border: 1px solid rgba(255,255,255,0.7);
+        border-radius: 12px;
+        padding: 20px 24px;
+        text-align: center;
+      }
+      .contact-box p { font-size: 15px; color: #334155; margin-bottom: 4px; }
+      .contact-box .email {
+        font-size: 18px;
+        font-weight: 600;
+        color: #0284c7;
+        text-decoration: none;
+      }
+      .contact-box .email:hover { text-decoration: underline; }
+      footer {
+        text-align: center;
+        padding: 32px 24px;
+        font-size: 13px;
+        color: #94a3b8;
+      }
+      footer a { color: #94a3b8; text-decoration: underline; }
+      @media (max-width: 600px) {
+        .container { padding: 24px 16px; }
+        .card { padding: 20px; }
+        header h1 { font-size: 26px; }
+        .features-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">🔢</div>
+        <h1>Glass Calculator</h1>
+        <p>Powerful Scientific &amp; Converter Calculator — Support</p>
+      </header>
+
+      <div class="card">
+        <h2><span class="icon">📖</span> About Glass Calculator</h2>
+        <p>
+          Glass Calculator combines a powerful scientific calculator, unit
+          converter with live currency rates, and graphing in a stunning
+          glass-effect interface. It changes its interface and behavior based
+          on context — morphing into whatever you need: basic arithmetic,
+          scientific functions, unit conversion, currency exchange, or more.
+        </p>
+        <p style="margin-top:12px">
+          Privacy-focused: no data collection, no account required, no
+          tracking. All calculations and conversions are performed entirely
+          on your device.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">✨</span> Features</h2>
+        <div class="features-grid">
+          <div class="feature-tag">Basic Arithmetic</div>
+          <div class="feature-tag">Scientific Functions</div>
+          <div class="feature-tag">Unit Converter (13 categories)</div>
+          <div class="feature-tag">Live Currency Rates</div>
+          <div class="feature-tag">Calculation History</div>
+          <div class="feature-tag">Dark &amp; Light Themes</div>
+          <div class="feature-tag">Glassmorphism UI</div>
+          <div class="feature-tag">Editable Expressions</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">❓</span> Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <div class="faq-question">What is Glass Calculator?</div>
+          <div class="faq-answer">
+            A beautifully designed all-in-one calculator with a premium
+            glass-effect interface. It supports basic calculations, advanced
+            scientific functions, unit conversions (13 categories), live
+            currency exchange rates, and calculation history.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I switch between modes?</div>
+          <div class="faq-answer">
+            Tap the mode button (≡) on the display to open the mode picker.
+            Select from Basic, Scientific, Converter, Graphing, or History.
+            The interface adapts to each mode.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How does the unit converter work?</div>
+          <div class="faq-answer">
+            Switch to Converter mode, select a category (Length, Weight,
+            Temperature, Volume, Area, Speed, Time, Digital Storage, Energy,
+            Pressure, Fuel Economy, Angle, or Currency), choose your from/to
+            units, and enter a value. Results appear instantly.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Are currency rates live?</div>
+          <div class="faq-answer">
+            Yes. The app fetches live exchange rates from
+            open.er-api.com when you use the Currency converter. If the
+            fetch fails, it falls back to 1:1 rates so the converter still
+            functions.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Does the app collect my data?</div>
+          <div class="faq-answer">
+            No. Glass Calculator collects no personal data, no usage
+            analytics, and no tracking information. All calculations are
+            performed locally on your device.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I view calculation history?</div>
+          <div class="faq-answer">
+            Switch to History mode from the mode picker. Your last 100
+            calculations are stored with timestamps. Tap an entry to reload
+            it, or clear all history with the trash button.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Is there a dark mode?</div>
+          <div class="faq-answer">
+            Yes. Tap the sun/moon icon in the top-right corner of the
+            display to toggle between light and dark themes.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">📋</span> Converter Categories</h2>
+        <ul>
+          <li>Length, Weight/Mass, Temperature, Volume</li>
+          <li>Area, Speed, Time, Digital Storage</li>
+          <li>Energy, Pressure, Fuel Economy, Angle</li>
+          <li><strong>Currency</strong> — 40 currencies with live rates via open.er-api.com</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">📲</span> Platform Support</h2>
+        <ul>
+          <li><strong>iOS</strong> — iOS 12.0+, iPhone and iPad</li>
+          <li><strong>Android</strong> — via Expo (configured)</li>
+        </ul>
+      </div>
+
+      <div class="contact-box">
+        <p>Need help? Contact support:</p>
+        <a class="email" href="mailto:private2106@yahoo.com">private2106@yahoo.com</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Glass Calculator. All rights reserved.</p>
+      <p style="margin-top:4px">
+        <a href="mailto:private2106@yahoo.com">Contact</a>
+      </p>
+    </footer>
+  </body>
+</html>
