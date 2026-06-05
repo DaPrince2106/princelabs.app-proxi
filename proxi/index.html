@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxi — Support</title>
+    <meta name="description" content="Proxi VPN Support — iOS VPN client that routes all device traffic through a SOCKS5 or HTTPS proxy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #ffffff 0%, #eef9ff 45%, #dff4ff 100%);
+        color: #0f172a;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+      .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+      header { text-align: center; margin-bottom: 56px; }
+      .logo { width: 80px; height: 80px; margin-bottom: 16px; }
+      header h1 { font-size: 32px; font-weight: 700; color: #0f172a; }
+      header p { font-size: 16px; color: #475569; margin-top: 8px; }
+      .card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        margin-bottom: 24px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+        border: 1px solid #e2e8f0;
+      }
+      .card h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #0f172a;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .card h2 .icon { font-size: 22px; }
+      .card p, .card li { font-size: 15px; color: #334155; }
+      .card ul { padding-left: 20px; }
+      .card ul li { margin-bottom: 8px; }
+      .faq-item {
+        border-bottom: 1px solid #f1f5f9;
+        padding: 16px 0;
+      }
+      .faq-item:last-child { border-bottom: none; }
+      .faq-question {
+        font-weight: 600;
+        font-size: 15px;
+        color: #0f172a;
+        margin-bottom: 6px;
+      }
+      .faq-answer { font-size: 14px; color: #475569; }
+      .faq-answer a { color: #0ea5e9; text-decoration: underline; }
+      .contact-box {
+        background: #f0f9ff;
+        border: 1px solid #bae6fd;
+        border-radius: 12px;
+        padding: 20px 24px;
+        text-align: center;
+      }
+      .contact-box p { font-size: 15px; color: #334155; margin-bottom: 4px; }
+      .contact-box .email {
+        font-size: 18px;
+        font-weight: 600;
+        color: #0284c7;
+        text-decoration: none;
+      }
+      .contact-box .email:hover { text-decoration: underline; }
+      footer {
+        text-align: center;
+        padding: 32px 24px;
+        font-size: 13px;
+        color: #94a3b8;
+      }
+      footer a { color: #94a3b8; text-decoration: underline; }
+      @media (max-width: 600px) {
+        .container { padding: 24px 16px; }
+        .card { padding: 20px; }
+        header h1 { font-size: 26px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="proxi-logo.png" alt="Proxi logo" />
+        <h1>Proxi</h1>
+        <p>iOS VPN Client — Support</p>
+      </header>
+
+      <div class="card">
+        <h2><span class="icon">📖</span> About Proxi</h2>
+        <p>
+          Proxi is an iOS VPN client that routes all device traffic through a
+          user-configured SOCKS5 or HTTPS proxy. It creates a system-wide VPN
+          tunnel using Apple's <code>NEPacketTunnelProvider</code> API, allowing
+          any app on your device to communicate through your chosen proxy server.
+        </p>
+        <p style="margin-top:12px">
+          Proxi does not collect, log, or transmit any user traffic data. The
+          VPN tunnel runs entirely on your device. Proxy servers are either
+          provided by you or purchased through third-party providers.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">❓</span> Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <div class="faq-question">What is Proxi?</div>
+          <div class="faq-answer">
+            Proxi is a VPN client for iOS that creates a system-wide VPN tunnel
+            and routes all traffic through a SOCKS5 or HTTPS proxy you configure.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I use Proxi?</div>
+          <div class="faq-answer">
+            Enter your proxy server details (host, port, protocol) on the Proxy
+            tab, then tap <strong>Connect</strong>. Proxi will create a VPN
+            tunnel and route your device's traffic through the proxy. You can
+            test the connection, monitor speed, and view tunnel logs from the
+            app.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">I'm having connection issues.</div>
+          <div class="faq-answer">
+            Verify your proxy server is running and reachable. Check the host,
+            port, and authentication credentials. Use the built-in speed test to
+            confirm connectivity. If issues persist, contact us at the email
+            below with details from the Logs tab.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I purchase proxies?</div>
+          <div class="faq-answer">
+            Open the Purchases tab in the app. Select your desired proxy
+            parameters (provider, country, quantity, period) and complete
+            payment via cryptocurrency through NowPayments. Proxy credentials
+            will be emailed to you after payment is confirmed.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Is my data safe?</div>
+          <div class="faq-answer">
+            Yes. Proxi runs entirely on your device. No traffic logs, usage
+            data, or personal information are collected or transmitted by the
+            app. Proxy credentials are stored locally and only if you choose to
+            save them.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Does Proxi support subscriptions?</div>
+          <div class="faq-answer">
+            No. Proxi offers one-time proxy purchases with period options of 7,
+            14, 30, 60, or 90 days. There are no recurring subscriptions.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">📋</span> Supported Proxy Types</h2>
+        <ul>
+          <li><strong>SOCKS5</strong> — with or without username/password authentication</li>
+          <li><strong>HTTPS (HTTP CONNECT)</strong> — with optional Basic authentication</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">📲</span> Platform Support</h2>
+        <ul>
+          <li><strong>iOS</strong> (primary) — iOS 15.1+, iPhone and iPad</li>
+          <li><strong>Desktop</strong> — macOS, Windows, Linux via Tauri desktop app</li>
+        </ul>
+      </div>
+
+      <div class="contact-box">
+        <p>Need help? Contact support:</p>
+        <a class="email" href="mailto:private2106@yahoo.com">private2106@yahoo.com</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Proxi. All rights reserved.</p>
+      <p style="margin-top:4px">
+        <a href="mailto:private2106@yahoo.com">Contact</a>
+      </p>
+    </footer>
+  </body>
+</html>
